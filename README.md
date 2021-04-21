@@ -1,6 +1,6 @@
 ![Badge](https://img.shields.io/badge/npm-v6.14.8-red)
 
-# nlw-5
+# Podcastr
 NLW #5 Rocketseat - Tocador de Podcasts denominado Podcastr.
 
 
