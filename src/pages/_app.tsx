@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
   }
 
   return (
-    <PlayerContext.Provider value={{ episodeList, currentEpisodeIndex, isPlaying, play, togglePlay}}>
+    <PlayerContext.Provider value={{ episodeList, currentEpisodeIndex, isPlaying, play, togglePlay, setPlayingState}}>
       <div className={styles.wrapper}>
         <main>
           <Header />
