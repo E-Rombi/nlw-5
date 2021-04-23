@@ -285,6 +285,6 @@ export const getStaticProps: GetStaticProps = async () => {
       latestEpisodes,
       allEpisodes
     },
-    revalidate: 60 * 60 * 8,
+    //revalidate: 60 * 60 * 8,  desabilitado para nao precisar upar uma api, manter mockado
   }
 }
