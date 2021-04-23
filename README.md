@@ -11,6 +11,7 @@ NLW #5 Rocketseat - Tocador de Podcasts denominado Podcastr.
 Tocador de Podcasts denominado Podcastr.
 
 ## Tecnologias Utilizadas
+- Next.js
 - React
 - Sass
 - Typescript
