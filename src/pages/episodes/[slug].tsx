@@ -9,6 +9,7 @@ import { convertDurationToTimeString } from '../../utils/convertDurationToTimeSt
 import styles from './episode.module.scss';
 import { useContext } from 'react';
 import { PlayerContext, usePlayer } from '../../contexts/PlayerContexts';
+import { episodesConst } from '../../utils/mockedData';
 
 type Episode = {
   id: string;
@@ -73,7 +74,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { slug } = ctx.params;    
-    const { data } = await api.get(`/episodes/${slug}`)
+    const data = episodesConst.filter(e => e.id === slug)[0];
+    
     const episode = {
         id: data.id,
           title: data.title,
