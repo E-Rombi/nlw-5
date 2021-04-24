@@ -3,6 +3,22 @@
   height: calc(100vh - 6.5rem);
   overflow-y: scroll;
 
+  &::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  &::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: var(--green-500);        /* color of the tracking area */
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--purple-500);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--green-500);  /* creates padding around scroll thumb */
+  }
+  
+
   h2 {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
